@@ -1,3 +1,5 @@
+#JogoResilia
+
 Fazer um jogo com vários finais baseados em escolhas. O jogo precisa ter mais de um final e precisa seguir este fluxo padrão:
 
 Fluxo:
@@ -16,7 +18,7 @@ A história do jogo precisa ter:
 
 - Um tema específico
 - Enredo
-Título
+- Título
 - Locais diferentes (pelo menos 3)
 - Personagens diferentes (pelo menos 3)
 - Condições de vitória (pelo menos 2)
