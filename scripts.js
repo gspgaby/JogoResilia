@@ -61,7 +61,7 @@ function sairDeCasa(){
 }
 
 function sairDeCarro(){
-    var respostaTres = prompt(;`Você decidiu ir de carro, agora deve decidir: Não beber e voltar um pouco mais cedo ou Beber com seus amigos. \n\n Digite 0 para naoBeber | Digite 1 para beber`);
+    var respostaTres = prompt(`Você decidiu ir de carro, agora deve decidir: Não beber e voltar um pouco mais cedo ou Beber com seus amigos. \n\n Digite 0 para naoBeber | Digite 1 para beber`);
     if (validarEscolhaUsuario(respostaTres) == false){
         sairDeCarro();
     }
@@ -86,7 +86,7 @@ function naoBeber(){
 }
 
 function beber(){
-    alert('Você foi parado em uma blitz e preso!')
+    alert('Você foi parado em uma blitz e preso!');
     gameOver();
 }
 
@@ -106,7 +106,7 @@ function sairDeOnibus(){
 function voltar(){
    var respostaSeis = prompt(`Você decidiu voltar mais cedo mas esta cansado da praia agora deve decidir:\n\n Digite 0 para fazer o trabalho | Digite 1 para naoFazerTrabalho`)
    if (validarEscolhaUsuario(respostaSeis) == false){
-        voltar()
+        voltar();
    }
    if (respostaSeis == 0){
        fazerTrabalho();
@@ -118,7 +118,7 @@ function voltar(){
 }
 
 function naoFazerTrabalho(){
-    alert('Você não entregou o trabalho no seu curso e repetiu de ano!')
+    alert('Você não entregou o trabalho no seu curso e repetiu de ano!');
     gameOver();
 }
 
@@ -142,28 +142,35 @@ function ficaEmCasa(){
 
 function filme(){
     var respostaOito = prompt('Você decidiu ver um filme, mas ficou com sono. \n\n Digite 0 para dormir | Digite 1 para fazerTrabalho');
-    if(validarEscolhaUsuario(respostaOito) == false)
+    if(validarEscolhaUsuario(respostaOito) == false){
+        filme();
+    }
     if(respostaOito == 0){
         dormir();
-    }else if(respostaOito == 1){
+    }    
+    else if(respostaOito == 1){
         fazerTrabalho();
     }
-}
+}    
 
 function dormir(){
-    alert('Você não entregou o trabalho no seu curso e repetiu de ano!')
+    alert('Você não entregou o trabalho no seu curso e repetiu de ano!');
     gameOver();
 }
 
 function festinha(){
     var respostaNove = prompt('Você decidiu fazer uma festinha, bebeu muito e não esta muito bem. \n\n Digite 0 para dormir |Digite 1 para fazerTrabalho')
-    if(validarEscolhaUsuario(respostaNove) == false)
+    if(validarEscolhaUsuario(respostaNove) == false){
+        festinha();
+    }
     if(respostaNove == 0){
         dormir();
-    }else if(respostaNove == 1){
+    }
+    else if(respostaNove == 1){
         fazerTrabalho();
     }
 }
+
 
 function validarEscolhaUsuario(escolha) {
     if (escolha == 0 || escolha == 1 || escolha == null){
