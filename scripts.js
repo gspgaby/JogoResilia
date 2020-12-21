@@ -39,7 +39,7 @@ function PrimeiraFase() {
     alert('É um domingo de sol você está em casa e tem trabalho do curso para realizar. Seu amigos te chamaram para ir para praia e você precisa decidir: Continuar em casa | Sair de Casa')
     var respostaUm = prompt('Digite 0 para Ficar em casa | Digite 1 para Sair de casa');
     if (validarEscolhaUsuario(respostaUm) == false){
-        PrimeiraFase()
+        PrimeiraFase();
     }
     if(respostaUm == 1){
         sairDeCasa();
@@ -51,7 +51,7 @@ function PrimeiraFase() {
 function sairDeCasa(){
     var respostaDois = prompt(`Você decidiu ir praia e deixar para fazer o trabalho mais tarde, decida como você vai: \n\n Digite 0 para Ir de onibus |Digite 1 para Ir de carro`);
     if (validarEscolhaUsuario(respostaDois) == false){
-        sairDeCasa()
+        sairDeCasa();
     }
     if(respostaDois ==1){       
         sairDeCarro();
@@ -61,9 +61,9 @@ function sairDeCasa(){
 }
 
 function sairDeCarro(){
-    var respostaTres = prompt(`Você decidiu ir de carro, agora deve decidir: Não beber e voltar um pouco mais cedo ou Beber com seus amigos. \n\n Digite 0 para naoBeber | Digite 1 para beber`);
+    var respostaTres = prompt(;`Você decidiu ir de carro, agora deve decidir: Não beber e voltar um pouco mais cedo ou Beber com seus amigos. \n\n Digite 0 para naoBeber | Digite 1 para beber`);
     if (validarEscolhaUsuario(respostaTres) == false){
-        sairDeCarro()
+        sairDeCarro();
     }
     if(respostaTres == 0){       
         naoBeber();
@@ -75,7 +75,7 @@ function sairDeCarro(){
 function naoBeber(){
     var respostaQuatro = prompt(`Você decidiu não beber e voltar mais cedo para casa, mas esta cansado da praia agora deve decidir: \n\n Digite 0 para fazer o trabalho | Digite 1 para não fazer o Trabalho`)
     if (validarEscolhaUsuario(respostaQuatro) == false){
-        naoBeber()
+        naoBeber();
     }
     if(respostaQuatro == 0){       
         fazerTrabalho();
@@ -87,13 +87,13 @@ function naoBeber(){
 
 function beber(){
     alert('Você foi parado em uma blitz e preso!')
-    gameOver()
+    gameOver();
 }
 
 function sairDeOnibus(){
     var respostaCinco = prompt(`Você decidiu ir de onibus e se divertiu bastante, agora deve decidir: Voltar um pouco mais cedo e fazer o trabalho ou ficar até mais tarde com seus amigos. \n\n Digite 0 para Voltar | Digite 1 para Ficar até tarde e não fazer o trabalho`);
     if (validarEscolhaUsuario(respostaCinco) == false){
-        sairDeOnibus()
+        sairDeOnibus();
     }
     if(respostaCinco == 0){       
         voltar();
@@ -130,10 +130,10 @@ function fazerTrabalho(){
 function ficaEmCasa(){
     var respostaSete = prompt('Você decidiu ficar em casa, agora deve decidir: \n\n Digite 0 para Chamar os amigos para uma festinha em casa | Digite 1 para Ver um filme sozinho');
     if(validarEscolhaUsuario(respostaSete) == false){
-        ficaEmCasa()
+        ficaEmCasa();
     }
     if(respostaSete == 0){
-        festinha()
+        festinha();
     }else if(respostaSete ==1){
         filme();
     }
@@ -144,7 +144,7 @@ function filme(){
     var respostaOito = prompt('Você decidiu ver um filme, mas ficou com sono. \n\n Digite 0 para dormir | Digite 1 para fazerTrabalho');
     if(validarEscolhaUsuario(respostaOito) == false)
     if(respostaOito == 0){
-        Dormir()
+        dormir();
     }else if(respostaOito == 1){
         fazerTrabalho();
     }
@@ -159,7 +159,7 @@ function festinha(){
     var respostaNove = prompt('Você decidiu fazer uma festinha, bebeu muito e não esta muito bem. \n\n Digite 0 para dormir |Digite 1 para fazerTrabalho')
     if(validarEscolhaUsuario(respostaNove) == false)
     if(respostaNove == 0){
-        Dormir()
+        dormir();
     }else if(respostaNove == 1){
         fazerTrabalho();
     }
